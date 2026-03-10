@@ -1,0 +1,19 @@
+```json
+{
+  "clean_indoor_unit_filters": {
+    "active": true,
+    "completed": false,
+    "confidence": 0.6,
+    "notes": "The hand is positioned near the indoor unit filter, indicating an attempt to clean it."
+  },
+  "check_air_flow": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.2,
+    "notes": "No clear indication of air flow being checked from the current perspective."
+  }
+}
+```
+INPUT: 26080
+OUTPUT: 109
+Response time: 10.073 seconds

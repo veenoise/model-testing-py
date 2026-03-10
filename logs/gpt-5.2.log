@@ -1,0 +1,47 @@
+{
+  "clean_indoor_unit_filters": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.2,
+    "notes": "Indoor unit is visible but filter access/cleaning is not shown."
+  },
+  "inspect_evaporator_coil": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.2,
+    "notes": "Evaporator coil is not visible; front panel remains closed."
+  },
+  "check_air_flow": {
+    "active": true,
+    "completed": false,
+    "confidence": 0.75,
+    "notes": "Hand is held in front of the split-type aircon outlet, consistent with checking airflow."
+  },
+  "inspect_refrigerant_lines": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.15,
+    "notes": "No refrigerant lines/pipes are visible in this frame."
+  },
+  "clean_outdoor_condenser_fins": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.05,
+    "notes": "Only an indoor wall unit is shown; outdoor condenser fins not visible."
+  },
+  "tighten_electrical_terminals": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.05,
+    "notes": "No opened electrical terminal panel or tools visible."
+  },
+  "check_thermostat_calibration": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.05,
+    "notes": "No wall thermostat is visible."
+  }
+}
+INPUT: 2321
+OUTPUT: 357
+Response time: 10.947 seconds

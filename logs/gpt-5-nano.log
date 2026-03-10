@@ -1,0 +1,47 @@
+{
+  "clean_indoor_unit_filters": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.25,
+    "notes": "No view of filters or cleaning action; only inner front grill visible."
+  },
+  "inspect_evaporator_coil": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.25,
+    "notes": "Evaporator coil not visible; behind front panel."
+  },
+  "check_air_flow": {
+    "active": true,
+    "completed": false,
+    "confidence": 0.60,
+    "notes": "Hand near air outlet suggests airflow check; no end state shown."
+  },
+  "inspect_refrigerant_lines": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.25,
+    "notes": "No refrigerant lines visible in frame."
+  },
+  "clean_outdoor_condenser_fins": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.25,
+    "notes": "Outdoor unit not visible in frame."
+  },
+  "tighten_electrical_terminals": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.25,
+    "notes": "Electrical terminals not in view."
+  },
+  "check_thermostat_calibration": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.25,
+    "notes": "Thermostat not visible in frame."
+  }
+}
+INPUT: 2756
+OUTPUT: 2579
+Response time: 56.789 seconds

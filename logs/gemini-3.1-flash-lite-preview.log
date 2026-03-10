@@ -1,0 +1,12 @@
+Warning: there are non-text parts in the response: ['executable_code', 'code_execution_result'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+{
+  "check_air_flow": {
+    "active": true,
+    "completed": false,
+    "confidence": 1.0,
+    "notes": "The technician's hand is held directly in front of the air conditioner's outlet, which is a standard method for checking airflow."
+  }
+}
+INPUT: 1684
+OUTPUT: 799
+Response time: 19.938 seconds

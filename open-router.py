@@ -38,7 +38,10 @@ Rules:
 - Never invent task IDs; never include extra fields.
 - All provided frames should be interpreted as first-person view from a technician's body-worn camera. Treat camera angles and visible hands/tools as belonging to the technician. Do not assume third-person perspectives. Only evaluate actions visible from this POV.
 '''
+
 start_time = time.time()
+
+model = 'mistralai/mistral-small-3.1-24b-instruct:free'
 
 response = requests.post(
   url="https://openrouter.ai/api/v1/chat/completions",
@@ -46,7 +49,7 @@ response = requests.post(
     "Authorization": f"Bearer {OPEN_ROUTER_API_KEY}",
   },
   data=json.dumps({
-    "model": "qwen/qwen3-coder:free",
+    "model": model,
     "messages": [
       {
         "role": "user",
@@ -119,5 +122,19 @@ response = requests.post(
 
 end_time = time.time()
 response_time = end_time - start_time
-print(response.json())
-print(f"Response time: {response_time:.3f} seconds")
+
+json_output = response.json()
+
+try:
+  print(f"{json_output["choices"][0]["message"]["content"]}")
+  print(f"INPUT: {json_output["usage"]["prompt_tokens"]}")
+  print(f"OUTPUT: {json_output["usage"]["completion_tokens"]}")
+  print(f"Response time: {response_time:.3f} seconds")
+
+  with open(f"./logs/{model.replace("/", "-")}.log", "w") as file:
+    file.write(f"{json_output["choices"][0]["message"]["content"]}\n")
+    file.write(f"INPUT: {json_output["usage"]["prompt_tokens"]}\n")
+    file.write(f"OUTPUT: {json_output["usage"]["completion_tokens"]}\n")
+    file.write(f"Response time: {response_time:.3f} seconds")
+except:
+  print(json_output)

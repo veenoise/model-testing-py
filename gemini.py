@@ -48,8 +48,10 @@ Rules:
 
 start_time = time.time()
 
+model = "gemini-3.1-flash-lite-preview"
+
 response = client.models.generate_content(
-    model="gemini-flash-1.5-8b",
+    model=model,
     contents=[image, JSON_INSTRUCTIONS +
               "\n\nallowed_ids: " +
               str([
@@ -111,3 +113,9 @@ print(response.text)
 print("INPUT:", response.usage_metadata.prompt_token_count)
 print("OUTPUT:", response.usage_metadata.candidates_token_count)
 print(f"Response time: {response_time:.3f} seconds")
+
+with open(f"./logs/{model}.log", 'w') as file:
+  file.write(f"{response.text}\n")
+  file.write(f"INPUT: {response.usage_metadata.prompt_token_count}\n")
+  file.write(f"OUTPUT: {response.usage_metadata.candidates_token_count}\n")
+  file.write(f"Response time: {response_time:.3f} seconds")

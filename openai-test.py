@@ -37,9 +37,12 @@ Rules:
 - Never invent task IDs; never include extra fields.
 - All provided frames should be interpreted as first-person view from a technician's body-worn camera. Treat camera angles and visible hands/tools as belonging to the technician. Do not assume third-person perspectives. Only evaluate actions visible from this POV.
 '''
+
+model = "gpt-4o"
+
 start_time = time.time()
 response = client.responses.create(
-    model="gpt-5-nano",
+    model=model,
     input=[
         {
             "role": "user",
@@ -111,3 +114,9 @@ print(response.output_text)
 print("INPUT:", usage.input_tokens)
 print("OUTPUT:", usage.output_tokens)
 print(f"Response time: {response_time:.3f} seconds")
+
+with open(f"./logs/{model}.log", 'w') as file:
+  file.write(f"{response.output_text}\n")
+  file.write(f"INPUT: {usage.input_tokens}\n")
+  file.write(f"OUTPUT: {usage.output_tokens}\n")
+  file.write(f"Response time: {response_time:.3f} seconds")

@@ -37,6 +37,9 @@ python openai-test.py
 
 # OpenRouter models
 python open-router.py
+
+# Hugging Face models
+python hugging-face.py
 ```
 
 Results are saved to `logs/` with token counts and response times.

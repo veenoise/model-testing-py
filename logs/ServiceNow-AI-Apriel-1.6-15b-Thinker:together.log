@@ -1,0 +1,62 @@
+We need to parse the prompt: We are a strict real-time activity validator. We receive a short, time-ordered sequence of frames and a list of tasks (with stable IDs). For each task, we need to return a JSON object keyed by task ID if in allowed_ids; otherwise exclude. The tasks list includes 7 tasks: "clean_indoor_unit_filters", "inspect_evaporator_coil", "check_air_flow", "inspect_refrigerant_lines", "clean_outdoor_condenser_fins", "tighten_electrical_terminals", "check_thermostat_calibration". The user provided a single frame (image) showing a first-person view: a hand reaching toward an indoor unit, with some visible interior compartments (fins?). The frame shows a hand (likely the technician's hand) reaching into the indoor unit. The unit appears to have a filter rack with fins visible, but the filter might be being removed or inspected. The hand is near the filter area. The question: which tasks are being performed? The tasks we need to evaluate are among the allowed IDs.
+
+We need to return a JSON object with fields for each task ID that we include (only those in allowed_ids). The example says "ONLY include task IDs from "allowed_ids"." So we must include each ID present in the tasks list? It says "For EACH task, return a JSON object keyed by the task's "id"." So we need to return for each task ID in the tasks list, a JSON entry with fields active, completed, confidence, notes. Possibly we need to include all tasks, even if not observed. But we also have rule: "If uncertain, set active=false, completed=false, confidence <= 0.35, and add a short "notes"." So for tasks that are not clearly happening, we can set active=false, completed=false, confidence low, notes.
+
+Given the single frame, we need to interpret what activity is happening. The hand is reaching towards the filter area of the indoor unit. Could be "clean_indoor_unit_filters" if the technician is cleaning filter. But we only see a hand, not the filter itself. The filter may be visible? The image shows a hand in front of the unit, with a view of the internal structure (some metal fins). It appears to be the indoor unit's filter. The user may be about to remove or replace filter. Or maybe they are inspecting or cleaning the evaporator coil? The evaporator coil is usually deeper inside the unit, not visible from the front. The filter is usually at the front. The hand is near the filter area. The description "check_air_flow" is described as "First-person view showing the user's hand in front of the split-type aircon." That matches this image: hand in front of the unit. But the description for "check_air_flow" says "hand in front of the split-type aircon." So maybe the activity is checking airflow. However, the "hand in front of the split-type aircon" could also be for "clean_indoor_unit_filters"? The label "Clean indoor unit filters" says "A first-person view of the AC indoor unit with the filter visible." That also matches the image: we see the indoor unit with filter visible (the two metal bars?). But we only see a hand, not the filter.
+
+We need to decide which tasks are active/completed in this frame. The frame seems to show a single moment of the technician's hand interacting with the unit. Likely the task "clean_indoor_unit_filters" is ongoing, as the hand is near the filter area. The filter may be being removed or cleaned. However, we cannot see the filter being cleaned or replaced. So active = true (the action is ongoing), completed = false (not yet completed), confidence maybe moderate (0.6). For other tasks, we are uncertain, so active=false, completed=false, confidence <=0.35, notes maybe "no clear view".
+
+We need to follow the rule: "If uncertain, set active=false, completed=false, confidence <= 0.35, and add a short 'notes'." So we need to mark tasks that are uncertain with low confidence and notes.
+
+Given the single frame, we can only confidently assign "clean_indoor_unit_filters" as active. But maybe "check_air_flow" also fits: the hand is in front of the unit. The description for "check_air_flow" is "First-person view showing the user's hand in front of the split-type aircon." That's exactly this. So perhaps the activity is "check_air_flow". The hand is in front of the unit, maybe measuring airflow. But the description for "clean_indoor_unit_filters" includes "filter visible". The image does not clearly show filter, but maybe the filter is partially visible behind the hand. The description for "check_air_flow" is more generic: just hand in front. So which one is more likely? The labeling suggests that "check_air_flow" is a separate activity. The difference is subtle.
+
+We must assume the tasks list is given, we need to evaluate each. The image likely belongs to one or more tasks. But we need to produce a JSON for each task. The best we can do is decide which tasks are active based on the frame.
+
+We need to consider that "active" indicates the action is ongoing in these frames. "completed" indicates the result is visible (e.g., cleaned blades). So for "clean_indoor_unit_filters", we could see the filter being removed or cleaned. But we don't see that. So maybe we can't say active. For "check_air_flow", the hand being in front of the unit suggests the technician is checking airflow, maybe with a hand to feel the flow. That is more plausible.
+
+But the description for "check_air_flow" might be that the hand is placed in front of the unit's vent to feel the airflow. The image shows the hand near the filter area, not in front of the vent. Hard to tell.
+
+Given the ambiguous nature, we may need to be uncertain for many tasks. But we need to pick one as active maybe.
+
+The prompt says: "For EACH task, return a JSON object keyed by the task's 'id'". So we must return entries for all tasks in the list, not just the ones that are observed. However, we could also possibly exclude tasks that are not in allowed_ids. All tasks are allowed. So we need to produce JSON with keys for each of the 7 tasks.
+
+We need to follow the format exactly:
+
+{
+  "<task_id>": {
+    "active": boolean,
+    "completed": boolean,
+    "confidence": number,
+    "notes": string
+  },
+  ...
+}
+
+No extra fields.
+
+We need to fill them appropriately.
+
+Now, we need to decide on each task:
+
+1. clean_indoor_unit_filters: The image shows a hand reaching towards the indoor unit interior where the filter is located. We may assume the technician is about to clean or replace the filter. The filter may be visible but not being cleaned now. So active = true? Completed = false. Confidence maybe 0.55. Notes: "Hand near filter area, appears to be cleaning/replacing filter."
+
+2. inspect_evaporator_coil: The evaporator coil is deeper inside, not visible. No evidence. So active = false, completed = false, confidence <=0.35, notes: "No coil visible."
+
+3. check_air_flow: The hand is in front of the unit, but not in front of the vent. Could be checking airflow. This is ambiguous. We could set active = false (no clear airflow test), completed = false, confidence <=0.35, notes: "Hand position ambiguous for airflow check."
+
+4. inspect_refrigerant_lines: No pipes visible. So active = false, completed = false, confidence low, notes: "No refrigerant lines visible."
+
+5. clean_outdoor_condenser_fins: This is outdoor; not visible. So active = false, completed = false, confidence low, notes: "Outdoor unit not shown."
+
+6. tighten_electrical_terminals: No electrical panel visible. So active = false, completed = false, confidence low, notes: "No terminal panel visible."
+
+7. check_thermostat_calibration: No thermostat visible. So active = false, completed = false, confidence low, notes: "Thermostat not shown."
+
+Now, we need to decide what confidence values to assign. The rule: "If uncertain, set active=false, completed=false, confidence <= 0.35, and add a short 'notes'." So for uncertain tasks, we must assign confidence <=0.35. For tasks we think are active, we can assign a higher confidence maybe >0.35. But we need to ensure confidence is between 0 and 1. So for "clean_indoor_unit_filters", we can set confidence = 0.6 maybe. For others, we need to set confidence maybe 0.2.
+
+Now, we need to consider that we might be wrong about "clean_indoor_unit_filters". The frame might not show the filter at all, just the hand. The description for "clean_indoor_unit_filters" says "A first-person view of the AC indoor unit with the filter visible." The image does not show the filter; the hand is covering it maybe. So we might be uncertain about that too. However, we need to decide the best guess. The prompt says "Prefer 'completed' only when an end-state is visible". So we will not set completed = true for any.
+
+Active: we need to set true only if the task is ongoing
+INPUT: 3855
+OUTPUT: 2048
+Response time: 18.941 seconds

@@ -1,0 +1,47 @@
+{
+  "clean_indoor_unit_filters": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.64,
+    "notes": "No filter or cleaning activity visible; front cover and louvers are in place."
+  },
+  "inspect_evaporator_coil": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.62,
+    "notes": "Evaporator coil not visible; unit not opened."
+  },
+  "check_air_flow": {
+    "active": true,
+    "completed": false,
+    "confidence": 0.82,
+    "notes": "Hand held in front of indoor unit outlet suggests ongoing airflow check."
+  },
+  "inspect_refrigerant_lines": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.7,
+    "notes": "No refrigerant pipes shown near the unit."
+  },
+  "clean_outdoor_condenser_fins": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.74,
+    "notes": "Image shows indoor unit, not outdoor condenser fins."
+  },
+  "tighten_electrical_terminals": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.68,
+    "notes": "No opened electrical terminal panel visible."
+  },
+  "check_thermostat_calibration": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.72,
+    "notes": "No wall thermostat in view."
+  }
+}
+INPUT: 1208
+OUTPUT: 1212
+Response time: 28.051 seconds

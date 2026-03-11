@@ -1,0 +1,13 @@
+```json
+{
+  "check_air_flow": {
+    "active": true,
+    "completed": false,
+    "confidence": 0.9,
+    "notes": "Hand is clearly visible in front of the aircon unit."
+  }
+}
+```
+INPUT: 976
+OUTPUT: 0
+Response time: 8.349 seconds

@@ -1,0 +1,18 @@
+{
+  "clean_indoor_unit_filters": {
+    "active": true,
+    "completed": false,
+    "confidence": 0.65,
+    "notes": "Hand interaction with filter grill area suggests cleaning, but no visible cleaning result. Could also be inspecting filter."
+  },
+  "check_air_flow": {
+    "active": true,
+    "completed": false,
+    "confidence": 0.55,
+    "notes": "Hand positioning aligns with airflow inspection POV, but no airflow measurement visible. Context supports activity, but not conclusive."
+  }
+}
+
+INPUT: 3935
+OUTPUT: 1073
+Response time: 31.500 seconds

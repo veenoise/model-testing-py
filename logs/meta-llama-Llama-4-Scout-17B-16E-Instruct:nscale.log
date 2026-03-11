@@ -1,0 +1,55 @@
+Based on the provided frame and the list of tasks, I will evaluate the tasks and return a JSON object with the required fields.
+
+The frame shows a hand reaching towards the air conditioning unit's vent. 
+
+Here is my evaluation:
+
+```
+{
+  "clean_indoor_unit_filters": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.2,
+    "notes": "No filter visible, no cleaning action seen"
+  },
+  "inspect_evaporator_coil": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "Evaporator coil not visible"
+  },
+  "check_air_flow": {
+    "active": true,
+    "completed": false,
+    "confidence": 0.8,
+    "notes": ""
+  },
+  "inspect_refrigerant_lines": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "Refrigerant lines not visible"
+  },
+  "clean_outdoor_condenser_fins": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "Outdoor condenser fins not visible"
+  },
+  "tighten_electrical_terminals": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "Electrical terminals not visible"
+  },
+  "check_thermostat_calibration": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "Thermostat not visible"
+  }
+}
+```
+INPUT: 2517
+OUTPUT: 355
+Response time: 13.716 seconds

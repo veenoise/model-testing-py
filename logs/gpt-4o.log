@@ -1,0 +1,13 @@
+```json
+{
+  "check_air_flow": {
+    "active": true,
+    "completed": false,
+    "confidence": 0.9,
+    "notes": "The technician's hand is in front of the indoor unit, suggesting air flow is being checked."
+  }
+}
+```
+INPUT: 1344
+OUTPUT: 61
+Response time: 38.362 seconds

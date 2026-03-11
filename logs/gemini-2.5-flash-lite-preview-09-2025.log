@@ -1,0 +1,60 @@
+The image provided shows a close-up of an indoor air conditioning unit with a hand positioned near the air outlet louvers.
+
+Based on the visual evidence and the provided tasks:
+
+1.  **`check_air_flow`**: The presence of the hand directly in front of the air outlet strongly suggests that the user is currently checking the airflow. This task is very likely **active**.
+2.  **`clean_indoor_unit_filters`**: The filters are visible behind the louvers, but the action of cleaning (e.g., removing, rinsing, or brushing) is not visible. The hand position is not typical for cleaning. So, this is likely not active or completed.
+3.  **`inspect_evaporator_coil`**: The evaporator coil would be deeper inside, behind the filters. The hand position is not focused on the coil.
+4.  **Other tasks**: Tasks related to outdoor units (`clean_outdoor_condenser_fins`), electrical terminals (`tighten_electrical_terminals`), refrigerant lines (`inspect_refrigerant_lines`), or the thermostat (`check_thermostat_calibration`) are entirely unrelated to the visible scene.
+
+Therefore, the most relevant active task is checking the airflow.
+
+```json
+{
+  "clean_indoor_unit_filters": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.2,
+    "notes": "Filters are not being actively cleaned or removed."
+  },
+  "inspect_evaporator_coil": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "Hand is at the outlet, not inspecting the coil deep inside."
+  },
+  "check_air_flow": {
+    "active": true,
+    "completed": false,
+    "confidence": 0.95,
+    "notes": "Hand is positioned directly in front of the air outlet vanes to feel the airflow."
+  },
+  "inspect_refrigerant_lines": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.05,
+    "notes": "No refrigerant lines visible or being inspected."
+  },
+  "clean_outdoor_condenser_fins": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.0,
+    "notes": "This is an indoor unit view."
+  },
+  "tighten_electrical_terminals": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.0,
+    "notes": "No tools or exposed terminals visible."
+  },
+  "check_thermostat_calibration": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.0,
+    "notes": "Thermostat is not visible."
+  }
+}
+```
+INPUT: 3974
+OUTPUT: 648
+Response time: 6.945 seconds

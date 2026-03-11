@@ -1,0 +1,37 @@
+```json
+{
+  "clean_indoor_unit_filters": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.95,
+    "notes": "Front panel closed; no filter removal or cleaning visible"
+  },
+  "inspect_evaporator_coil": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.95,
+    "notes": "Evaporator coil not exposed; unit cover is intact"
+  },
+  "check_air_flow": {
+    "active": true,
+    "completed": false,
+    "confidence": 0.90,
+    "notes": "Technician's hand held in front of indoor unit vents to feel airflow"
+  },
+  "inspect_refrigerant_lines": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.95,
+    "notes": "No refrigerant pipes visible; view focused on front of indoor unit"
+  },
+  "clean_outdoor_condenser_fins": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.98,
+    "notes": "Frame shows indoor split-type unit mounted on wall, not outdoor condenser"
+  },
+  "tighten_electrical_terminals": {
+    "active":
+INPUT: 4863
+OUTPUT: 2048
+Response time: 38.251 seconds

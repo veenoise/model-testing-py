@@ -1,0 +1,47 @@
+{
+  "clean_indoor_unit_filters": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.25,
+    "notes": "Filters are not visible or being handled in frame; cannot confirm cleaning."
+  },
+  "inspect_evaporator_coil": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.25,
+    "notes": "Evaporator coil is not exposed or clearly visible from this viewpoint."
+  },
+  "check_air_flow": {
+    "active": true,
+    "completed": false,
+    "confidence": 0.88,
+    "notes": "Technician's hand is positioned in front of the outlet louvres consistent with feeling/checking airflow."
+  },
+  "inspect_refrigerant_lines": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.2,
+    "notes": "Refrigerant pipes are not visible in the frame."
+  },
+  "clean_outdoor_condenser_fins": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.2,
+    "notes": "Outdoor condenser is not shown in this indoor-first-person view."
+  },
+  "tighten_electrical_terminals": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.2,
+    "notes": "No opened electrical terminal panel or tools visible to indicate tightening."
+  },
+  "check_thermostat_calibration": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.2,
+    "notes": "Thermostat is not visible in the frame; cannot assess calibration check."
+  }
+}
+INPUT: 2321
+OUTPUT: 972
+Response time: 18.962 seconds

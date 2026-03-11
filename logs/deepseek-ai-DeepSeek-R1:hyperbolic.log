@@ -1,0 +1,49 @@
+```json
+{
+  "clean_indoor_unit_filters": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.0,
+    "notes": "No frames provided; unable to observe filters or cleaning actions."
+  },
+  "inspect_evaporator_coil": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.0,
+    "notes": "No frames provided; evaporator coil not visible for inspection."
+  },
+  "check_air_flow": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.0,
+    "notes": "No frames provided; technician's hand/airflow testing not observed."
+  },
+  "inspect_refrigerant_lines": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.0,
+    "notes": "No frames provided; refrigerant lines not visible for inspection."
+  },
+  "clean_outdoor_condenser_fins": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.0,
+    "notes": "No frames provided; outdoor condenser fins not observed."
+  },
+  "tighten_electrical_terminals": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.0,
+    "notes": "No frames provided; electrical terminal panel not visible."
+  },
+  "check_thermostat_calibration": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.0,
+    "notes": "No frames provided; thermostat not visible for calibration check."
+  }
+}
+```
+INPUT: 650
+OUTPUT: 578
+Response time: 8.127 seconds

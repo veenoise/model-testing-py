@@ -1,0 +1,13 @@
+```json
+{
+  "check_air_flow": {
+    "active": true,
+    "completed": false,
+    "confidence": 0.9,
+    "notes": "Hand is positioned in front of the AC unit, indicating a check of air flow."
+  }
+}
+```
+INPUT: 641
+OUTPUT: 59
+Response time: 8.148 seconds

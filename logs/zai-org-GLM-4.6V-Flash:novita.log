@@ -1,0 +1,12 @@
+
+{
+  "check_air_flow": {
+    "active": true,
+    "completed": false,
+    "confidence": 0.9,
+    "notes": "Hand positioned in front of split-type AC to check air flow."
+  }
+}
+INPUT: 6659
+OUTPUT: 300
+Response time: 9.774 seconds

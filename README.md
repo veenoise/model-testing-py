@@ -22,6 +22,7 @@ Edit `.env` with your credentials:
 - `GOOGLE_APPLICATION_CREDENTIALS`: Path to Vertex AI credentials JSON
 - `OPENAI_API_KEY`: Your OpenAI API key
 - `OPEN_ROUTER_API_KEY`: Your OpenRouter API key
+- `HUGGING_FACE_API_KEY`: Your Hugging Face API key
 
 ## Usage
 

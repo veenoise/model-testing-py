@@ -66,3 +66,4 @@ Each task returns:
 - **Google Gemini**: gemini-3.1-flash-lite-preview, gemini-2.5-flash, etc.
 - **OpenAI**: gpt-4o, gpt-5, gpt-4.1-mini, etc.
 - **OpenRouter**: Google Gemma, and Nvidia Nemotron
+- **Hugging Face**: Qwen, ServiceNow, zai-org, meta-llama, etc.

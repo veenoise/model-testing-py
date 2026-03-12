@@ -1,0 +1,50 @@
+```json
+{
+  "clean_indoor_unit_filters": {
+    "active": true,
+    "completed": false,
+    "confidence": 0.75,
+    "notes": "Hand is positioned near the filters, likely checking or preparing to clean them."
+  },
+  "inspect_evaporator_coil": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "Evaporator coil not visible."
+  },
+  "check_air_flow": {
+    "active": true,
+    "completed": false,
+    "confidence": 0.85,
+    "notes": "Hand is held in front of the unit, presumably to check air flow."
+  },
+  "inspect_refrigerant_lines": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "Refrigerant lines not visible."
+  },
+  "clean_outdoor_condenser_fins": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "Outdoor unit not visible."
+  },
+  "tighten_electrical_terminals": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "Electrical panel not visible."
+  },
+  "check_thermostat_calibration": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "Thermostat not visible."
+  }
+}
+```
+INPUT: 987
+OUTPUT: 383
+PROVIDER: DeepInfra
+Response time: 9.304 seconds

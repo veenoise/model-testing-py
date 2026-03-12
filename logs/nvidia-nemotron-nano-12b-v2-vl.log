@@ -1,0 +1,13 @@
+{
+  "clean_indoor_unit_filters": {
+    "active": true,
+    "completed": false,
+    "confidence": 0.4,
+    "notes": "Hand reaching toward indoor unit fins suggests starting cleaning, but no visible dirt or completed wiping motion confirmed."
+  }
+}
+
+INPUT: 3992
+OUTPUT: 583
+PROVIDER: DeepInfra
+Response time: 7.590 seconds

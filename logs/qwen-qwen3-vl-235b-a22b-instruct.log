@@ -1,0 +1,48 @@
+{
+  "clean_indoor_unit_filters": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "No filter is visible; only the front louvered panel is shown. Hand gesture suggests checking airflow, not filter cleaning."
+  },
+  "inspect_evaporator_coil": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "Evaporator coil is not visible; access panel appears closed. No inspection is occurring."
+  },
+  "check_air_flow": {
+    "active": true,
+    "completed": false,
+    "confidence": 0.9,
+    "notes": "Hand is positioned directly in front of the indoor unit’s air outlet, consistent with feeling for airflow."
+  },
+  "inspect_refrigerant_lines": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "Refrigerant lines are not visible in frame; only indoor unit front is shown."
+  },
+  "clean_outdoor_condenser_fins": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "Outdoor unit and condenser fins are not visible; this is an indoor unit view."
+  },
+  "tighten_electrical_terminals": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "Electrical panel is not visible; no tools or terminals are shown."
+  },
+  "check_thermostat_calibration": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "Thermostat is not visible; view is focused on the indoor AC unit."
+  }
+}
+INPUT: 12382
+OUTPUT: 393
+PROVIDER: Parasail
+Response time: 43.960 seconds

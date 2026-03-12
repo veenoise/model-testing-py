@@ -1,0 +1,48 @@
+{
+    "clean_indoor_unit_filters": {
+        "active": true,
+        "completed": false,
+        "confidence": 0.65,
+        "notes": "Filter visible; user's hand reaching towards filter area suggests cleaning in progress"
+    },
+    "inspector": {
+        "active": true,
+        "completed": false,
+        "confidence": 0.95,
+        "notes": "Surprised to see this kind of content, very unique perspective"
+    },
+    "check_air_flow": {
+        "active": false,
+        "completed": true,
+        "confidence": 0.95,
+        "notes": "Hand placed in front of aircon unit to check airflow, action complete"
+    },
+    "inspect_refrigerant_lines": {
+        "active": false,
+        "completed": false,
+        "confidence": 0.05,
+        "notes": "Refrigerant lines not visible in the given view"
+    },
+    "clean_outdoor_condenser_fins": {
+        "active": false,
+        "completed": false,
+        "confidence": 0.05,
+        "notes": "Outdoor unit not visible in first-person view"
+    },
+    "tighten_electrical_terminals": {
+        "active": false,
+        "completed": false,
+        "confidence": 0.05,
+        "notes": "Electrical terminal panel not visible in current perspective"
+    },
+    "check_thermostat_calibration": {
+        "active": false,
+        "completed": false,
+        "confidence": 0.05,
+        "notes": "Thermostat not visible in the given view"
+    }
+}
+INPUT: 1623
+OUTPUT: 353
+PROVIDER: Parasail
+Response time: 5.910 seconds

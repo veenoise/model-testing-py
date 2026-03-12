@@ -1,0 +1,48 @@
+{
+  "clean_indoor_unit_filters": {
+    "active": true,
+    "completed": false,
+    "confidence": 0.75,
+    "notes": "Hands visible reaching into and interacting with the indoor unit's filter area, but no cleaning action or end-state shown"
+  },
+  "inspect_evaporator_coil": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "No view of evaporator coil; only exterior of indoor unit visible"
+  },
+  "check_air_flow": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.2,
+    "notes": "Hand near unit but not positioned to check airflow; interaction appears focused on access rather than testing"
+  },
+  "inspect_refrigerant_lines": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.05,
+    "notes": "No refrigerant lines or pipes visible in frames"
+  },
+  "clean_outdoor_condenser_fins": {
+    "active": false,
+    "completed": false,
+    "confidence": 0,
+    "notes": "Frames show indoor unit only; no outdoor condenser visible"
+  },
+  "tighten_electrical_terminals": {
+    "active": false,
+    "completed": false,
+    "confidence": 0,
+    "notes": "No electrical panel or terminals visible"
+  },
+  "check_thermostat_calibration": {
+    "active": false,
+    "completed": false,
+    "confidence": 0,
+    "notes": "No thermostat visible in frames"
+  }
+}
+INPUT: 1029
+OUTPUT: 958
+PROVIDER: xAI
+Response time: 8.431 seconds

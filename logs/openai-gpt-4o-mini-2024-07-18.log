@@ -1,0 +1,50 @@
+```json
+{
+  "clean_indoor_unit_filters": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.3,
+    "notes": "The hand is near the indoor unit but no filters are visible or actions indicating cleaning."
+  },
+  "inspect_evaporator_coil": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.2,
+    "notes": "The frame does not show the evaporator coil."
+  },
+  "check_air_flow": {
+    "active": true,
+    "completed": false,
+    "confidence": 0.6,
+    "notes": "The hand is positioned in front of the aircon, indicating a check on airflow."
+  },
+  "inspect_refrigerant_lines": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "No refrigerant lines visible in the frame."
+  },
+  "clean_outdoor_condenser_fins": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "Outdoor condenser fins are not visible."
+  },
+  "tighten_electrical_terminals": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "No electrical terminals visible in the frame."
+  },
+  "check_thermostat_calibration": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "Thermostat is not visible in the frame."
+  }
+}
+```
+INPUT: 26132
+OUTPUT: 349
+PROVIDER: OpenAI
+Response time: 15.693 seconds

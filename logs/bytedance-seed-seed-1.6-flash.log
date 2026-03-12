@@ -1,0 +1,12 @@
+{
+  "check_air_flow": {
+    "active": true,
+    "completed": false,
+    "confidence": 0.7,
+    "notes": "Hand positioned in front of split-type AC vents, consistent with checking air flow"
+  }
+}
+INPUT: 2103
+OUTPUT: 944
+PROVIDER: Seed
+Response time: 9.014 seconds

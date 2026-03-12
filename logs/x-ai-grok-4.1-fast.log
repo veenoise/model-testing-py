@@ -1,0 +1,48 @@
+{
+  "clean_indoor_unit_filters": {
+    "active": true,
+    "completed": false,
+    "confidence": 0.9,
+    "notes": "Hands visibly manipulating filter access area on indoor unit"
+  },
+  "inspect_evaporator_coil": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "No view of evaporator coil visible"
+  },
+  "check_air_flow": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.2,
+    "notes": "Hand touching unit, not held in front for airflow check"
+  },
+  "inspect_refrigerant_lines": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.05,
+    "notes": "No refrigerant lines or pipes visible"
+  },
+  "clean_outdoor_condenser_fins": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.0,
+    "notes": "Indoor unit only, no outdoor condenser"
+  },
+  "tighten_electrical_terminals": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.0,
+    "notes": "No electrical panel or terminals visible"
+  },
+  "check_thermostat_calibration": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.0,
+    "notes": "No thermostat visible"
+  }
+}
+INPUT: 1029
+OUTPUT: 919
+PROVIDER: xAI
+Response time: 14.135 seconds

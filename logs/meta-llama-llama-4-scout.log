@@ -1,0 +1,58 @@
+Based on the provided frame, I will evaluate the tasks.
+
+Here is the JSON output:
+
+```
+{
+  "clean_indoor_unit_filters": {
+    "active": true,
+    "completed": false,
+    "confidence": 0.8,
+    "notes": ""
+  },
+  "inspect_evaporator_coil": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "Evaporator coil not visible"
+  },
+  "check_air_flow": {
+    "active": true,
+    "completed": false,
+    "confidence": 0.6,
+    "notes": ""
+  },
+  "inspect_refrigerant_lines": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "Refrigerant lines not visible"
+  },
+  "clean_outdoor_condenser_fins": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "Outdoor condenser fins not visible"
+  },
+  "tighten_electrical_terminals": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "Electrical terminals not visible"
+  },
+  "check_thermostat_calibration": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "Thermostat not visible"
+  }
+}
+```
+
+In this frame, the technician's hand is visible near the indoor unit's filter area, suggesting that the task "clean_indoor_unit_filters" might be active. The confidence level is set to 0.8 as it appears likely but not certain. 
+
+The other tasks are not visible in this frame, so their confidence levels are set low, and they are marked as not active or completed.
+INPUT: 2517
+OUTPUT: 398
+PROVIDER: DeepInfra
+Response time: 11.706 seconds

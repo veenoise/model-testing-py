@@ -1,0 +1,50 @@
+```json
+{
+    "clean_indoor_unit_filters": {
+        "active": false,
+        "completed": false,
+        "confidence": 0.0,
+        "notes": "No visible filter being cleaned; only the hand position in front of the air conditioning unit is shown."
+    },
+    "inspect_evaporator_coil": {
+        "active": false,
+        "completed": false,
+        "confidence": 0.0,
+        "notes": "Evaporator coil is not directly visible in this frame; only the top section of the indoor unit is shown."
+    },
+    "check_air_flow": {
+        "active": true,
+        "completed": false,
+        "confidence": 0.8,
+        "notes": "The hand is positioned directly in front of the air vents, suggesting the technician is checking or adjusting airflow."
+    },
+    "inspect_refrigerant_lines": {
+        "active": false,
+        "completed": false,
+        "confidence": 0.0,
+        "notes": "Refrigerant lines are not visible in this frame."
+    },
+    "clean_outdoor_condenser_fins": {
+        "active": false,
+        "completed": false,
+        "confidence": 0.0,
+        "notes": "Outdoor condenser fins are not visible in this frame."
+    },
+    "tighten_electrical_terminals": {
+        "active": false,
+        "completed": false,
+        "confidence": 0.0,
+        "notes": "No electrical terminal panel or tightening activity is visible."
+    },
+    "check_thermostat_calibration": {
+        "active": false,
+        "completed": false,
+        "confidence": 0.0,
+        "notes": "Thermostat is not visible in this frame."
+    }
+}
+```
+INPUT: 3018
+OUTPUT: 393
+PROVIDER: Mistral
+Response time: 6.161 seconds

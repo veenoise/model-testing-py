@@ -1,0 +1,50 @@
+```json
+{
+  "check_air_flow": {
+    "active": true,
+    "completed": false,
+    "confidence": 0.8,
+    "notes": "Hand is positioned in front of the indoor AC unit, likely checking for air flow."
+  },
+  "clean_indoor_unit_filters": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "No signs of cleaning tools or the filter being accessed."
+  },
+  "inspect_evaporator_coil": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "The evaporator coil is not visible in this perspective."
+  },
+  "inspect_refrigerant_lines": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "Refrigerant lines are not visible in this image."
+  },
+  "clean_outdoor_condenser_fins": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "This appears to be an indoor unit, not the outdoor condenser."
+  },
+  "tighten_electrical_terminals": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "No electrical terminals or tools are visible."
+  },
+  "check_thermostat_calibration": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "A thermostat is not visible in this image."
+  }
+}
+```
+INPUT: 15944
+OUTPUT: 351
+PROVIDER: DeepInfra
+Response time: 20.635 seconds

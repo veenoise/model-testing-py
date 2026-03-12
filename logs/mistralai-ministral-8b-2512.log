@@ -1,0 +1,50 @@
+```json
+{
+    "clean_indoor_unit_filters": {
+        "active": false,
+        "completed": false,
+        "confidence": 0.0,
+        "notes": "No visible evidence of filter cleaning or access to filters in the frames."
+    },
+    "inspect_evaporator_coil": {
+        "active": false,
+        "completed": false,
+        "confidence": 0.0,
+        "notes": "Evaporator coil is not visible in the frames."
+    },
+    "check_air_flow": {
+        "active": true,
+        "completed": false,
+        "confidence": 0.95,
+        "notes": "Hand is positioned near the indoor unit, likely checking airflow by feeling or observing air movement."
+    },
+    "inspect_refrigerant_lines": {
+        "active": false,
+        "completed": false,
+        "confidence": 0.0,
+        "notes": "Refrigerant lines are not visible in the frames."
+    },
+    "clean_outdoor_condenser_fins": {
+        "active": false,
+        "completed": false,
+        "confidence": 0.0,
+        "notes": "Outdoor condenser fins are not visible in the frames."
+    },
+    "tighten_electrical_terminals": {
+        "active": false,
+        "completed": false,
+        "confidence": 0.0,
+        "notes": "Electrical terminals are not visible or accessible in the frames."
+    },
+    "check_thermostat_calibration": {
+        "active": false,
+        "completed": false,
+        "confidence": 0.0,
+        "notes": "Thermostat is not visible in the frames."
+    }
+}
+```
+INPUT: 3018
+OUTPUT: 375
+PROVIDER: Mistral
+Response time: 6.761 seconds

@@ -1,0 +1,12 @@
+{
+  "check_air_flow":{
+    "active": true,
+    "completed": false,
+    "confidence": 0.56,
+    "notes": "The technician's hand is positioned in front of the aircon, but from this angle it's unclear if there's any movement or air flow."
+  }
+}
+INPUT: 15944
+OUTPUT: 67
+PROVIDER: Parasail
+Response time: 8.171 seconds

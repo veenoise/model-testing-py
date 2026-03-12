@@ -1,0 +1,48 @@
+{
+  "check_air_flow": {
+    "active": true,
+    "completed": true,
+    "confidence": 0.9,
+    "notes": "Hand is placed directly in front of the indoor AC unit's air outlet, indicating air flow testing."
+  },
+  "inspect_evaporator_coil": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "No visible access to the evaporator coil; only front grille and air outlet are in view."
+  },
+  "clean_indoor_unit_filters": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "Filter not visible or accessed; only front panel shown."
+  },
+  "inspect_refrigerant_lines": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "Refrigerant lines not visible; only indoor unit front is shown."
+  },
+  "clean_outdoor_condenser_fins": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "Outdoor unit not visible; only indoor unit is present in frame."
+  },
+  "tighten_electrical_terminals": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "Electrical terminal panel not visible; only front of indoor unit shown."
+  },
+  "check_thermostat_calibration": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "Thermostat not visible; frame focused on indoor AC unit."
+  }
+}
+INPUT: 3126
+OUTPUT: 370
+PROVIDER: Alibaba
+Response time: 7.222 seconds

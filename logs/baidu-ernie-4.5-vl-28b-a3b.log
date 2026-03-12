@@ -1,0 +1,50 @@
+```json
+{
+  "clean_indoor_unit_filters": {
+    "active": true,
+    "completed": false,
+    "confidence": 0.8,
+    "notes": "Hand is actively touching the filter slots, indicating active cleaning action."
+  },
+  "inspect_evaporator_coil": {
+    "active": false,
+    "completed": false,
+    "confidence": 0,
+    "notes": "No evaporator coil is visible in this frame."
+  },
+  "check_air_flow": {
+    "active": true,
+    "completed": false,
+    "confidence": 0.85,
+    "notes": "Hand is positioned in front of the air outlet blades."
+  },
+  "inspect_refrigerant_lines": {
+    "active": false,
+    "completed": false,
+    "confidence": 0,
+    "notes": "No refrigerant lines are visible in this frame."
+  },
+  "clean_outdoor_condenser_fins": {
+    "active": false,
+    "completed": false,
+    "confidence": 0,
+    "notes": "The frame focuses on an indoor unit, not the outdoor condenser."
+  },
+  "tighten_electrical_terminals": {
+    "active": false,
+    "completed": false,
+    "confidence": 0,
+    "notes": "No electrical terminal panel is visible in this frame."
+  },
+  "check_thermostat_calibration": {
+    "active": false,
+    "completed": false,
+    "confidence": 0,
+    "notes": "The frame does not show the thermostat mounted on the wall."
+  }
+}
+```
+INPUT: 6901
+OUTPUT: 402
+PROVIDER: Novita
+Response time: 16.776 seconds

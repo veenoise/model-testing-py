@@ -1,0 +1,50 @@
+```json
+{
+  "clean_indoor_unit_filters": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.2,
+    "notes": "Filters are not visible; only the front panel of the indoor unit is visible."
+  },
+  "inspect_evaporator_coil": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.2,
+    "notes": "No internal parts are visible; only the outside casing is shown."
+  },
+  "check_air_flow": {
+    "active": true,
+    "completed": false,
+    "confidence": 0.9,
+    "notes": "The hand is obstructing the airflow, likely for inspection."
+  },
+  "inspect_refrigerant_lines": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.2,
+    "notes": "Refrigerant lines are not visible in the current frame."
+  },
+  "clean_outdoor_condenser_fins": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.2,
+    "notes": "Only the indoor unit is visible, not the outdoor condenser."
+  },
+  "tighten_electrical_terminals": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "No electrical terminal panel is visible in the frame; only the indoor unit is shown."
+  },
+  "check_thermostat_calibration": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.15,
+    "notes": "No thermostat is visible in the current frame."
+  }
+}
+```
+INPUT: 2343
+OUTPUT: 370
+PROVIDER: Amazon Bedrock
+Response time: 8.638 seconds

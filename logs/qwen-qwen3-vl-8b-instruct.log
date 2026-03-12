@@ -1,0 +1,12 @@
+{
+  "check_air_flow": {
+    "active": true,
+    "completed": false,
+    "confidence": 0.95,
+    "notes": "Hand is visible in front of the air outlet, consistent with checking airflow."
+  }
+}
+INPUT: 3126
+OUTPUT: 54
+PROVIDER: Alibaba
+Response time: 9.774 seconds

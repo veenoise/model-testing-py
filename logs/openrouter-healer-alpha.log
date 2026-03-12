@@ -1,0 +1,49 @@
+```json
+{
+  "check_air_flow": {
+    "active": true,
+    "completed": false,
+    "confidence": 0.9,
+    "notes": "Hand is clearly positioned in front of the indoor unit's air outlet to feel airflow, indicating active check."
+  },
+  "clean_indoor_unit_filters": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "Unit front panel is closed, filters are not visible or accessible in this frame."
+  },
+  "inspect_evaporator_coil": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "Unit is fully assembled; evaporator coil is not exposed or visible."
+  },
+  "inspect_refrigerant_lines": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "No refrigerant pipes are visible in this first-person indoor view."
+  },
+  "clean_outdoor_condenser_fins": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "View is of the indoor unit; outdoor condenser is not visible."
+  },
+  "tighten_electrical_terminals": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "Electrical panel is not opened or visible; unit is fully assembled."
+  },
+  "check_thermostat_calibration": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.1,
+    "notes": "Thermostat is not visible in this frame focused on the AC unit itself."
+  }
+}
+```
+INPUT: 10819
+OUTPUT: 679
+Response time: 11.677 seconds

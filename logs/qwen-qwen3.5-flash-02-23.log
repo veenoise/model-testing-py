@@ -1,0 +1,50 @@
+```json
+{
+  "clean_indoor_unit_filters": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.9,
+    "notes": "Filters are not visible in this frame; front panel is open but empty or just louvers visible."
+  },
+  "inspect_evaporator_coil": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.9,
+    "notes": "Evaporator coil is not visible."
+  },
+  "check_air_flow": {
+    "active": true,
+    "completed": false,
+    "confidence": 0.95,
+    "notes": "Hand is held in front of the air outlet to test airflow."
+  },
+  "inspect_refrigerant_lines": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.9,
+    "notes": "In refrigerant lines not in view."
+  },
+  "clean_outdoor_condenser_fins": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.99,
+    "notes": "Indoor unit is shown, not outdoor condenser."
+  },
+  "tighten_electrical_terminals": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.95,
+    "notes": "Electrical terminal panel is not open."
+  },
+  "check_thermostat_calibration": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.95,
+    "notes": "Thermostat is not visible in the frame."
+  }
+}
+```
+INPUT: 3190
+OUTPUT: 2478
+PROVIDER: Alibaba
+Response time: 17.688 seconds

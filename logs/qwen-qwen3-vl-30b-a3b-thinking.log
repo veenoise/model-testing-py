@@ -1,0 +1,18 @@
+{
+  "clean_indoor_unit_filters": {
+    "active": false,
+    "completed": false,
+    "confidence": 0.2,
+    "notes": "Filter visible but no cleaning action observed"
+  },
+  "check_air_flow": {
+    "active": true,
+    "completed": false,
+    "confidence": 0.9,
+    "notes": "Hand positioned to assess air flow"
+  }
+}
+INPUT: 3128
+OUTPUT: 1376
+PROVIDER: Alibaba
+Response time: 14.016 seconds

@@ -41,7 +41,7 @@ Rules:
 
 start_time = time.time()
 
-model = 'mistralai/mistral-small-3.1-24b-instruct:free'
+model = 'qwen/qwen3.5-35b-a3b'
 
 response = requests.post(
   url="https://openrouter.ai/api/v1/chat/completions",
@@ -50,6 +50,10 @@ response = requests.post(
   },
   data=json.dumps({
     "model": model,
+    "provider": {
+      "data_collection": "allow",
+      "sort": "price"
+    },
     "messages": [
       {
         "role": "user",
@@ -129,12 +133,14 @@ try:
   print(f"{json_output["choices"][0]["message"]["content"]}")
   print(f"INPUT: {json_output["usage"]["prompt_tokens"]}")
   print(f"OUTPUT: {json_output["usage"]["completion_tokens"]}")
+  print(f"PROVIDER: {json_output["provider"]}")
   print(f"Response time: {response_time:.3f} seconds")
 
   with open(f"./logs/{model.replace("/", "-")}.log", "w") as file:
     file.write(f"{json_output["choices"][0]["message"]["content"]}\n")
     file.write(f"INPUT: {json_output["usage"]["prompt_tokens"]}\n")
     file.write(f"OUTPUT: {json_output["usage"]["completion_tokens"]}\n")
+    file.write(f"PROVIDER: {json_output["provider"]}\n")
     file.write(f"Response time: {response_time:.3f} seconds")
 except:
   print(json_output)

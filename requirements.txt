@@ -15,7 +15,7 @@ fsspec==2026.2.0
 google-api-core==2.29.0
 google-auth==2.47.0
 google-cloud-aiplatform==1.133.0
-google-cloud-bigquery==3.40.0
+google-cloud-bigquery==3.40.1
 google-cloud-core==2.5.0
 google-cloud-resource-manager==1.15.0
 google-cloud-storage==3.8.0

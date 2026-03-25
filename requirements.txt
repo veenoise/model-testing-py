@@ -50,7 +50,7 @@ Pygments==2.19.2
 python-dateutil==2.9.0.post0
 python-dotenv==1.1.1
 PyYAML==6.0.3
-requests==2.32.4
+requests==2.33.0
 rich==14.3.3
 rsa==4.9.1
 shellingham==1.5.4
